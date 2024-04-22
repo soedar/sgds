@@ -4357,6 +4357,12 @@ textarea.form-control-lg {
   outline: #5925DC auto 2px;
   z-index: 100;
 }
+.sgds.datepicker > .datepicker-header button.disabled {
+  cursor: not-allowed;
+}
+.sgds.datepicker > .datepicker-header button:hover:not(.disabled) {
+  background-color: #ECE6FB;
+}
 .sgds.datepicker > .datepicker-header i {
   font-size: 1.25rem;
 }
@@ -4371,6 +4377,13 @@ textarea.form-control-lg {
 .sgds.datepicker td:focus-visible {
   outline: #5925DC auto 2px;
   z-index: 100;
+}
+.sgds.datepicker td.disabled {
+  cursor: not-allowed;
+}
+.sgds.datepicker td[role=button]:hover:not(.disabled) {
+  background-color: #ECE6FB;
+  cursor: pointer;
 }
 .sgds.datepicker .monthpicker,
 .sgds.datepicker .yearpicker {
@@ -4397,6 +4410,10 @@ textarea.form-control-lg {
 .sgds.datepicker .year:focus-visible {
   outline: #5925DC auto 2px;
   z-index: 100;
+}
+.sgds.datepicker .month:hover,
+.sgds.datepicker .year:hover {
+  background-color: #ECE6FB;
 }
 
 .dropup,
@@ -9423,7 +9440,7 @@ textarea.form-control-lg {
   color: rgba(var(--sgds-body-color-rgb), var(--sgds-text-opacity)) !important;
 }
 
-.text-muted {
+.text-muted, .sgds.datepicker td.disabled {
   --sgds-text-opacity: 1;
   color: #667085 !important;
 }
@@ -10377,7 +10394,7 @@ textarea.form-control-lg {
   border-radius: 0.3125rem !important;
 }
 
-.rounded-0 {
+.rounded-0, .sgds.datepicker td {
   border-radius: 0 !important;
 }
 
@@ -15288,47 +15305,47 @@ section.wrapper.home section.home-get-started .home-get-started-content-grid {
     gap: 1rem;
   }
 }
-section.wrapper.home section.home-get-started .home-get-started-content-grid .grid {
+section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   gap: 3rem;
   justify-content: stretch;
 }
 @media (max-width: 991.98px) {
-  section.wrapper.home section.home-get-started .home-get-started-content-grid .grid {
+  section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid {
     gap: 1rem;
   }
 }
-section.wrapper.home section.home-get-started .home-get-started-content-grid .grid.left {
+section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid.left {
   padding-bottom: 3rem;
 }
 @media (max-width: 991.98px) {
-  section.wrapper.home section.home-get-started .home-get-started-content-grid .grid.left {
+  section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid.left {
     padding: 0;
   }
 }
-section.wrapper.home section.home-get-started .home-get-started-content-grid .grid.right {
+section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid.right {
   padding-top: 3rem;
 }
 @media (max-width: 991.98px) {
-  section.wrapper.home section.home-get-started .home-get-started-content-grid .grid.right {
+  section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid.right {
     padding: 0;
   }
 }
-section.wrapper.home section.home-get-started .home-get-started-content-grid .grid .card {
+section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid .card {
   background: hsl(228deg, 38%, 97%);
   border: none;
 }
-section.wrapper.home section.home-get-started .home-get-started-content-grid .grid .card-eyebrow {
+section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid .card-eyebrow {
   color: var(--sgds-primary);
   margin-bottom: 4px;
   font-weight: bold;
 }
-section.wrapper.home section.home-get-started .home-get-started-content-grid .grid .card-body {
+section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid .card-body {
   padding: 30px 50px;
   color: var(--sgds-gray-600);
 }
-section.wrapper.home section.home-get-started .home-get-started-content-grid .grid .card-body a {
+section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid .card-body a {
   color: var(--sgds-primary);
   font-weight: bold;
 }
