@@ -38,7 +38,7 @@
                 <a 
                     class="nav-link" 
                     href="#"
-                    id="repoDropdown"
+                    id="github-dropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -46,17 +46,18 @@
                     <i class="bi bi-github h3 mb-0"></i>
                     <span class="visually-hidden-focusable">SGDS Github repo</span>
                 </a>
-                <ul class="sgds dropdown-menu dropdown-menu-end" aria-labelledby="repoDropdown">
-                    <li><a class="dropdown-item" href="{{site.github-link}}">SGDS HTML/CSS Github</a></li>
-                    <li><a class="dropdown-item" href="{{site.github-react}}">SGDS React Github</a></li>
-                    <li><a class="dropdown-item" href="{{site.github-web-component}}">SGDS Web Component Github</a></li>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="github-dropdown">
+                    <li><span class="dropdown-item-heading">Github</span></li>
+                    <li><a class="dropdown-item" href="{{site.github-link}}">SGDS</a></li>
+                    <li><a class="dropdown-item" href="{{site.github-react}}">React</a></li>
+                    <li><a class="dropdown-item" href="{{site.github-web-component}}">Web Component</a></li>
                 </ul>
             </li>
             <li class="nav-item sgds dropdown">
                 <a 
                     class="nav-link"
                     href="#"
-                    id="storybookDropdown"
+                    id="storybook-dropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false">
@@ -71,9 +72,10 @@
                         </g>
                         </svg>
                 </a>
-                <ul class="sgds dropdown-menu dropdown-menu-end" aria-labelledby="storybookDropdown">
-                    <li><a class="dropdown-item" href="{{site.react-storybook}}">SGDS React Storybook</a></li>
-                    <li><a class="dropdown-item" href="{{site.web-component-storybook}}">SGDS Web Component Storybook</a></li>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="storybook-dropdown">
+                    <li><span class="dropdown-item-heading">Storybook</span></li>
+                    <li><a class="dropdown-item" href="{{site.react-storybook}}">React</a></li>
+                    <li><a class="dropdown-item" href="{{site.web-component-storybook}}">Web Component</a></li>
                 </ul>
             </li>
             
