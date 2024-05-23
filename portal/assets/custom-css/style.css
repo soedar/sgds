@@ -14998,6 +14998,12 @@ sgds-masthead {
 .sgds.navbar .navbar-toggler:focus {
   box-shadow: none;
 }
+.sgds.navbar .nav-item.dropdown .dropdown-item-heading {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--sgds-gray-700);
+  padding: 0.25rem 1rem;
+}
 
 .card-title {
   font-weight: bold;
