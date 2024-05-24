@@ -14996,10 +14996,39 @@ aside .sgds.sidenav {
 }
 aside .sgds.sidenav a {
   text-decoration: none;
-  color: var(--sgds-gray-500);
+  color: var(--sgds-gray-600);
 }
 aside .sgds.sidenav a:hover {
-  color: var(--sgds-gray-700);
+  color: var(--sgds-primary);
+}
+aside .sgds.sidenav .btn.active a {
+  color: var(--sgds-primary);
+}
+aside .sgds.sidenav .btn:hover a {
+  color: var(--sgds-primary);
+}
+aside .sgds.sidenav .sidenav-item .btn.active i.bi-chevron-down, aside .sgds.sidenav .sidenav-item .btn.inactive i.bi-chevron-down {
+  transform: rotate(180deg);
+}
+aside .sgds.sidenav .sidenav-item .btn.active i.bi-chevron-down.collapsed, aside .sgds.sidenav .sidenav-item .btn.inactive i.bi-chevron-down.collapsed {
+  transform: rotate(0deg);
+}
+aside .sgds.sidenav .sidenav-item > ul {
+  list-style: none;
+  padding-left: 0;
+}
+aside .sgds.sidenav .sidenav-item > ul.collapse, aside .sgds.sidenav .sidenav-item > ul.collapse.show, aside .sgds.sidenav .sidenav-item > ul.collapsing {
+  margin-top: 0;
+}
+aside .sgds.sidenav .sidenav-item > ul li.active {
+  color: var(--sgds-primary);
+  border-left: 0.125rem solid var(--sgds-primary);
+  font-weight: 700;
+}
+aside .sgds.sidenav .sidenav-item > ul li .sgds.btn {
+  border-left: 0;
+  padding-left: 2rem;
+  gap: 0;
 }
 aside .sgds.sidenav .sidenav-item + .sidenav-item {
   margin-top: 0;
@@ -15995,6 +16024,17 @@ section.wrapper.home section.home-part-of-change + .part-of-change {
 }
 
 /* Generic.Inserted & Diff Inserted */
+.bash .highlight pre {
+  background-color: var(--sgds-gray-100);
+  border: 1px solid var(--sgds-gray-400);
+}
+.bash .highlight pre code, .bash .highlight pre code > span {
+  color: var(--sgds-secondary);
+}
+.bash .highlight .err {
+  background-color: var(--sgds-gray-100);
+}
+
 .sgds-code-font {
   font-family: "Courier New", Courier, monospace;
   font-weight: 400;
