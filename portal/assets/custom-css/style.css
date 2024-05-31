@@ -15360,7 +15360,7 @@ section.wrapper.home section.home-get-started .home-get-started-content-grid .ho
   }
 }
 section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid .card {
-  background: hsl(228deg, 38%, 97%);
+  background: #F6F7FB;
   border: none;
   border-radius: 1.5rem;
 }
@@ -15370,12 +15370,16 @@ section.wrapper.home section.home-get-started .home-get-started-content-grid .ho
   font-weight: bold;
 }
 section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid .card-body {
+  display: flex;
+  flex-direction: column;
   padding: 2rem 3.125rem;
   color: var(--sgds-gray-600);
 }
 section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid .card-body a {
   color: var(--sgds-primary);
   font-weight: bold;
+  margin-top: auto;
+  width: fit-content;
 }
 section.wrapper.home section.home-part-of-change {
   display: grid;
@@ -15459,7 +15463,7 @@ section.wrapper.home section.home-part-of-change + .part-of-change {
   }
 }
 .get-started-content-grid .card {
-  background: hsl(228deg, 38%, 97%);
+  background: #F6F7FB;
   border: none;
   border-radius: 1.5rem;
 }
@@ -15469,12 +15473,16 @@ section.wrapper.home section.home-part-of-change + .part-of-change {
   font-weight: bold;
 }
 .get-started-content-grid .card-body {
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
   color: var(--sgds-gray-600);
 }
 .get-started-content-grid .card-body a {
   color: var(--sgds-primary);
   font-weight: bold;
+  margin-top: auto;
+  width: fit-content;
 }
 .get-started-content-grid .card.disabled {
   opacity: 0.5;
@@ -15482,6 +15490,7 @@ section.wrapper.home section.home-part-of-change + .part-of-change {
 .get-started-content-grid .card.disabled span.small {
   color: var(--sgds-gray-500);
   font-weight: 700;
+  margin-top: auto;
 }
 
 .get-started-overview-grid {
@@ -15494,7 +15503,13 @@ section.wrapper.home section.home-part-of-change + .part-of-change {
   }
 }
 .get-started-overview-grid .card-body {
+  display: flex;
+  flex-direction: column;
   padding: 2rem 3.125rem;
+}
+.get-started-overview-grid .card-body a {
+  margin-top: auto;
+  width: fit-content;
 }
 
 .page-component section[name*=section-] + section[name*=section-] {

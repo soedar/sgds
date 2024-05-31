@@ -81,7 +81,7 @@ section.wrapper{
                         }
         
                         .card{
-                            background: hsl(228, 38%, 97%);
+                            background: #F6F7FB;
                             border: none;
                             border-radius: 1.5rem;
                             &-eyebrow{
@@ -90,11 +90,15 @@ section.wrapper{
                                 font-weight: bold;
                             }
                             &-body{
+                                display: flex;
+                                flex-direction: column;
                                 padding: 2rem 3.125rem;
                                 color: var(--sgds-gray-600);
                                 a{
                                     color: var(--sgds-primary);
                                     font-weight: bold;
+                                    margin-top: auto;
+                                    width: fit-content;
                                 }
                             }
                         }
