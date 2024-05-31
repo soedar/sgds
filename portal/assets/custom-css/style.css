@@ -14792,7 +14792,7 @@ body {
 
 .toc-wrapper {
   position: sticky;
-  top: calc(154.8px + 1rem);
+  top: calc(calc(80px + 28px + 46.8px) + 1rem);
 }
 
 .w-75ch {
@@ -15043,7 +15043,7 @@ aside .sgds.sidenav .sidenav-item + .sidenav-item {
   margin-top: 0;
 }
 aside .sgds.sidenav.sticky {
-  --sgds-sidenav-sticky-top: 154.8px;
+  --sgds-sidenav-sticky-top: calc(80px + 28px + 46.8px);
 }
 
 .sidebar {
