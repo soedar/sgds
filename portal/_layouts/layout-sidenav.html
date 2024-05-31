@@ -35,7 +35,7 @@ layout: layout-default
                     {% endif %}
                     <li class="sidenav-item">
                         <button type="button" class="sgds btn {{class}}" aria-expanded="true" aria-controls="{{id}}">
-                            <a role="button" href="{{item.url}}">{{item.title}} </a> <i class="bi bi-chevron-down" data-bs-toggle="collapse" data-bs-target="#{{id}}"></i>
+                            <a role="button" href="{{item.url}}" class="w-100">{{item.title}} </a> <i class="bi bi-chevron-down" data-bs-toggle="collapse" data-bs-target="#{{id}}"></i>
                         </button>
                         <ul class="collapse show" id="{{id}}">
                             {% for child_item in site[collection.label] %}
