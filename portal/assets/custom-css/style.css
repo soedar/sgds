@@ -14792,7 +14792,7 @@ body {
 
 .toc-wrapper {
   position: sticky;
-  top: calc(calc(80px + 28px + 46.8px) + 1rem);
+  top: calc(80px + 28px + 46.8px + 1rem);
 }
 
 .w-75ch {
