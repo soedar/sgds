@@ -6594,7 +6594,9 @@ textarea.form-control-lg {
   color: #344054;
 }
 .sgds.sidenav.sticky {
-  --sgds-sidenav-sticky-top: 0rem;
+  --sgds-sidenav-sticky-top: calc(
+    80px + 28px
+  );
   position: -webkit-sticky;
   position: sticky;
   max-height: calc(100dvh - var(--sgds-sidenav-sticky-top));
