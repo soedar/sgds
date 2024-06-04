@@ -85,6 +85,7 @@ collections:
       - sass.html
       - react.html
       - webcomponent.html
+      - react-select.html
   foundations:
     permalink: /:collection/:name
     output: true
