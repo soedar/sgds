@@ -2,6 +2,7 @@
 title: Bootstrap Grid System
 layout: layout-sidenav
 toc: false
+description: SGDS leverages on <a href="https://getbootstrap.com/docs/5.1/layout/grid/" target="_blank">Bootstrap’s grid system</a> that enables developers to design dynamic and visually appealing interfaces that will captivate users and enhance their overall experience.
 cards:
     - name: "Breakpoints"
       description: "Breakpoints are customizable widths that determine how your responsive layout behaves across device or
@@ -40,9 +41,6 @@ cards:
 
 <div class="page-component">
     {% include page-component/component-header.html %}
-    <p>SGDS leverages on <a href="#">Bootstrap's grid system</a>that enables developers to design dynamic and visually
-        appealing
-        interfaces that will captivate users and enhance their overall experience.</p>
     <div role="alert" class="sgds alert alert-info fade d-flex align-items-center show">
         <div>
             New to or unfamiliar with flexbox? <a target="_blank"
@@ -53,11 +51,11 @@ cards:
     </div>
     <div class="grid">
         {% for i in page.cards %}
-        <div class="card sgds bg-light implementations-card border-0 w-100 h-100 g-col-lg-4 g-col-12">
-            <div class="card-body d-flex flex-column">
-                <div class="h4 card-title fw-bold">{{ i.name }}</div>
+        <div class="portal-borderless-card g-col-lg-4 g-col-12">
+            <div class="portal-borderless-card-body">
+                <div class="h4 card-title">{{ i.name }}</div>
                 <p class="card-text">{{ i.description }}</p>
-                <a href="{{i.href}}" target="{{i.target}}" class="mt-auto">Learn more</a>
+                <a href="{{i.href}}" target="{{i.target}}">Learn more</a>
             </div>
         </div>
         {% endfor %}
