@@ -53,11 +53,11 @@ cards:
     </div>
     <div class="grid">
         {% for i in page.cards %}
-        <div class="card sgds bg-light implementations-card border-0 w-100 h-100 g-col-lg-6 g-col-12">
-            <div class="card-body">
+        <div class="card sgds bg-light implementations-card border-0 w-100 h-100 g-col-lg-4 g-col-12">
+            <div class="card-body d-flex flex-column">
                 <div class="h4 card-title fw-bold">{{ i.name }}</div>
                 <p class="card-text">{{ i.description }}</p>
-                <a href="{{i.href}}" target="{{i.target}}">Learn more</a>
+                <a href="{{i.href}}" target="{{i.target}}" class="mt-auto">Learn more</a>
             </div>
         </div>
         {% endfor %}
