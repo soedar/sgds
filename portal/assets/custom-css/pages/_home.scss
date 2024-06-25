@@ -81,25 +81,11 @@ section.wrapper{
                         }
         
                         .card{
-                            background: #F6F7FB;
-                            border: none;
+                            @extend .portal-borderless-card;
                             border-radius: 1.5rem;
-                            &-eyebrow{
-                                color: var(--sgds-primary);
-                                margin-bottom: 4px;
-                                font-weight: bold;
-                            }
                             &-body{
-                                display: flex;
-                                flex-direction: column;
+                                @extend .portal-borderless-card-body;
                                 padding: 2rem 3.125rem;
-                                color: var(--sgds-gray-600);
-                                a{
-                                    color: var(--sgds-primary);
-                                    font-weight: bold;
-                                    margin-top: auto;
-                                    width: fit-content;
-                                }
                             }
                         }
                     }
