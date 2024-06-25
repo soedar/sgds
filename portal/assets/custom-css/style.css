@@ -15042,9 +15042,6 @@ aside .sgds.sidenav .sidenav-item > ul li .sgds.btn {
 aside .sgds.sidenav .sidenav-item + .sidenav-item {
   margin-top: 0;
 }
-aside .sgds.sidenav.sticky {
-  --sgds-sidenav-sticky-top: calc(80px + 28px + 46.8px);
-}
 
 .sidebar {
   position: fixed;
