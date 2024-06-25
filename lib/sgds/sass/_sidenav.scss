@@ -88,8 +88,9 @@
       --#{$prefix}sidenav-sticky-top: calc(
         #{$navbar-min-height} + #{$masthead-height}
       );
+      position: -webkit-sticky;
       position: sticky;
-      max-height: calc(100vh - var(--#{$prefix}sidenav-sticky-top));
+      max-height: calc(100dvh - var(--#{$prefix}sidenav-sticky-top));
       top: var(--#{$prefix}sidenav-sticky-top);
       overflow-y: auto;
     }
