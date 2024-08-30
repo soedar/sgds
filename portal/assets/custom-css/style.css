@@ -7972,6 +7972,10 @@ section.wrapper.home section.home-get-started .home-get-started-content-grid .ho
 .sgds.combobox > .dropdown-menu, .combobox.portal-borderless-card > .dropdown-menu, section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid .combobox.card > .dropdown-menu, section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid .combobox.portal-borderless-card > .dropdown-menu, .get-started-content-grid .combobox.card > .dropdown-menu, .get-started-content-grid .combobox.portal-borderless-card > .dropdown-menu, section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid .get-started-content-grid .combobox.card > .dropdown-menu, section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid .get-started-content-grid .combobox.portal-borderless-card > .dropdown-menu {
   min-width: 100%;
 }
+.sgds.combobox.scrollable > .dropdown-menu, .combobox.scrollable.portal-borderless-card > .dropdown-menu, section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid .combobox.scrollable.card > .dropdown-menu, section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid .combobox.scrollable.portal-borderless-card > .dropdown-menu, .get-started-content-grid .combobox.scrollable.card > .dropdown-menu, .get-started-content-grid .combobox.scrollable.portal-borderless-card > .dropdown-menu, section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid .get-started-content-grid .combobox.scrollable.card > .dropdown-menu, section.wrapper.home section.home-get-started .home-get-started-content-grid .home-grid .get-started-content-grid .combobox.scrollable.portal-borderless-card > .dropdown-menu {
+  max-height: 480px;
+  overflow: auto;
+}
 
 .clearfix::after {
   display: block;
